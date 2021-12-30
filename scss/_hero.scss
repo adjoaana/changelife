@@ -18,26 +18,26 @@ position: relative;
 
 
  &__text{
+     font-size: $font-lg;
+    color: $white;
      @include breakpoint-down(small){
         position: absolute;
         top: 71%;
         left: 5%;
         align-items: center;
         text-align: left;
-        font-size: $font-lg;
-        color: $white;
      }
      @include breakpoint-up(medium){
         width: 51%;
         align-items: center;
         text-align: left;
-        font-size: $font-lg;
         position: absolute;
         top: 39%;
         left: 22%;
-        color: $white;
+        
     } 
     &__1{
+        
         background-color:rgba(95, 191, 116, 0.698);
         @include breakpoint-down(small) {
             width: 66%;

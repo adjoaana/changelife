@@ -1,11 +1,33 @@
 .feature{
     &__text{
-        text-align: center;
+        align-items: center;
+        justify-content: space-around;
+        
         &__title{
-            font-size: $font-xlg;
             color: $darkTurquoise;
+            font-size: $font-lg;
             align-items: center;
+            text-align: center;
+            @include breakpoint-up(large){
+                position: relative;
+                left: 38%;
+                width: 30%; 
+                  
+            }
+            >p{
+                @include breakpoint-up(large){
+                    width: 100%;
+                    text-align:center;
+                }
+                    text-align: left;
+                    padding-top: 2.75rem;
+                
+            }
+                      
         }
+    }
+    &__card{
+
     }
 }
 .container{

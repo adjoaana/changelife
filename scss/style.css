@@ -31,6 +31,8 @@ h3 {
 p {
   margin: 0;
   padding: 0;
+  color: #404040;
+  font-size: 0.875rem;
 }
 
 @media (max-width: 39.9375em) {
@@ -235,6 +237,11 @@ p {
   background: linear-gradient(to bottom, transparent 85%, white);
 }
 
+.hero__text {
+  font-size: 1.875rem;
+  color: white;
+}
+
 @media (max-width: 39.9375em) {
   .hero__text {
     position: absolute;
@@ -244,8 +251,6 @@ p {
         -ms-flex-align: center;
             align-items: center;
     text-align: left;
-    font-size: 1.875rem;
-    color: white;
   }
 }
 
@@ -256,11 +261,9 @@ p {
         -ms-flex-align: center;
             align-items: center;
     text-align: left;
-    font-size: 1.875rem;
     position: absolute;
     top: 39%;
     left: 22%;
-    color: white;
   }
 }
 
@@ -344,15 +347,40 @@ p {
 }
 
 .feature__text {
-  text-align: center;
-}
-
-.feature__text__title {
-  font-size: 2.5rem;
-  color: #009474;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.feature__text__title {
+  color: #009474;
+  font-size: 1.875rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+@media (min-width: 64em) {
+  .feature__text__title {
+    position: relative;
+    left: 38%;
+    width: 30%;
+  }
+}
+
+.feature__text__title > p {
+  text-align: left;
+  padding-top: 2.75rem;
+}
+
+@media (min-width: 64em) {
+  .feature__text__title > p {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .container {
