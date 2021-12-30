@@ -1,0 +1,13 @@
+.feature{
+    &__text{
+        text-align: center;
+        &__title{
+            font-size: $font-xlg;
+            color: $darkTurquoise;
+            align-items: center;
+        }
+    }
+}
+.container{
+    padding: 1.5625rem 5.875rem;
+}

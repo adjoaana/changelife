@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+body {
+  font-size: $font-sm;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+p{
+  margin: 0;
+  padding: 0;
+}
+//hide for tablet and mobile 
+.hide-for-mobile{
+  @include breakpoint-down(small){
+    display: none;
+  }
+}
+.hide-for-tablet{
+  @include breakpoint-down(medium){
+    display: none;
+  }
+}
+//hide for desktop viewport widths
+.hide-for-desktop{
+  @include breakpoint-up(large){
+    display: none;
+  }
+}
