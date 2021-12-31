@@ -1,32 +1,22 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html,
-body {
-  font-size: 100%;
-  margin: 0;
-  padding: 0;
-  user-select: none;
-}
-body {
-  font-size: $font-sm;
-  font-family: "Montserrat", sans-serif;
-}
+@use '../util/' as *;
 
 h1,
 h2,
 h3 {
-  font-family: "Montserrat", sans-serif;
-  margin: 0;
+  font-family: var(--font-montserrat);
+  margin-top: 0;
 }
+a,
+a:visited, 
+a:active{
+    text-decoration: none;
+}
+
 p{
   margin: 0;
   padding: 0;
-  color: $lightBrown;
-  font-size: $font-sm;
+  color: var(--lightbrown);
+  font-size: var(--font-sm);
 }
 //hide for tablet and mobile 
 .hide-for-mobile{

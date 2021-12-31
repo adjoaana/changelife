@@ -1,3 +1,5 @@
+@use  '../util/' as *;
+
 .hero{
 position: relative;
  background-image: url(/images/hero.jpg);
@@ -13,13 +15,13 @@ position: relative;
         height: 100%;
         z-index: 2;
         opacity: 1;
-        background: linear-gradient( to bottom , transparent 85%, $white);
+        background: linear-gradient( to bottom , transparent 85%, --white);
     }
 
 
  &__text{
      font-size: $font-lg;
-    color: $white;
+    color: var(--white);
      @include breakpoint-down(small){
         position: absolute;
         top: 71%;
@@ -86,12 +88,12 @@ position: relative;
         border-radius: 50%;
         top: 80%;
         left: 50%;
-        border: 1px solid $limeGreen;
+        border: 1px solid var(--limegreen);
         &::before{
             content: "+";
             display: inline-block;
             font-size: 4.438rem;
-            color: $limeGreen;
+            color: var(--limegreen);
             margin-left: 1.4rem;
             margin-bottom: 2rem;
             text-decoration: none;
