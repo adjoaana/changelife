@@ -1,3 +1,4 @@
+@use  '../util/' as *;
 .header{
     margin: 0;
     &.open{
@@ -38,12 +39,12 @@
                 width:  16.875rem ;
                 height: 4.75rem;
                 margin: 1rem;
-            }
+            };
             @include breakpoint-up(large){
             width: 14.375rem;
             height: 3.875rem;
             margin: 1.125rem  17rem ;
-            }
+            };
             
         }
     }
@@ -66,8 +67,8 @@
             
             > a{
                 text-decoration: none;
-                font-size: $font-sm;
-                color: $white;
+                font-size: var(--font-sm);
+                color: var(--white);
                 &:hover{
                     color: var(--lightbrown);
                 }

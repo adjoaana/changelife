@@ -1,3 +1,5 @@
+@use  '../util/' as *;
+
 .feature{
     &__text{
         align-items: center;
@@ -5,7 +7,7 @@
         
         &__title{
             color: var(--darkturqouise);
-            font-size: $font-lg;
+            font-size: var(--font-lg);
             align-items: center;
             text-align: center;
             @include breakpoint-up(large){
@@ -26,9 +28,7 @@
                       
         }
     }
-    &__card{
-
-    }
+ 
 }
 .container{
     padding: 1.5625rem 5.875rem;
