@@ -10,12 +10,12 @@
             font-size: var(--font-lg);
             align-items: center;
             text-align: center;
-            @include breakpoint-up(large){
+            @include  breakpoint-up(large){
                 position: relative;
                 left: 38%;
                 width: 30%; 
                   
-            }
+            };
             >p{
                 @include breakpoint-up(large){
                     width: 100%;
