@@ -1,5 +1,4 @@
-@use  '../util/' as *;
-
+@use '../util/' as *;
 .feature{
     &__text{
         align-items: center;
@@ -10,22 +9,25 @@
             font-size: var(--font-lg);
             align-items: center;
             text-align: center;
-            @include  breakpoint-up(large){
+
+            @include breakpoint(large){
                 position: relative;
                 left: 38%;
                 width: 30%; 
                   
-            };
-            >p{
-                @include breakpoint-up(large){
-                    width: 100%;
-                    text-align:center;
+            }
+                      
+        }
+        &__body{
+            width: 60%;
+            left: 50%;
+                @include breakpoint(large){
+                    padding:  0 4rem;
+                   text-align:center;
+                   
                 }
                     text-align: left;
                     padding-top: 2.75rem;
-                
-            }
-                      
         }
     }
  

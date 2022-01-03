@@ -4,5 +4,10 @@ box-sizing: border-box;
 body{
     margin: 0;
     padding: 0;
-    font-family: var(--font-montserrat);
+    font-family: var(--font--montserrat);
 }
+.container{
+    margin: 0 rem(346);
+    
+}
+

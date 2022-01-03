@@ -31,7 +31,7 @@ p{
 }
 //hide for desktop viewport widths
 .hide-for-desktop{
-  @include breakpoint-up(large){
+  @include breakpoint(large){
     display: none;
   }
 }
