@@ -7,7 +7,13 @@ body{
     font-family: var(--font--montserrat);
 }
 .container{
-    margin: 0 rem(346);
-    
+    padding: 1.5625rem 5.875rem;
+    &-px{
+        padding:  0 5.875rem;
+    }
+    &-py{
+        padding: 1.5625rem 0;
+    }
 }
+
 
