@@ -5,13 +5,11 @@
         justify-content: space-around;
         
         &__title{
-            color: var(--darkturqouise);
-            font-size: var(--font-lg);
             align-items: center;
             text-align: center;
 
             @include breakpoint(large){
-                position: relative;
+                position: absolute;
                 left: 38%;
                 width: 30%; 
                   
@@ -49,7 +47,7 @@
             
         }
         @include breakpoint(large){
-            width: 52.125rem;
+            //width: 52.125rem;
             height: 20rem;
             padding: 1.5625rem 5.875rem;
             align-items: center;
@@ -67,7 +65,7 @@
                 }
                 p{
                     font-size: var(--font-mid);
-                    padding: 2rem;
+                     padding: 2rem;
                 }
                
         }

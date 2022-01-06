@@ -1,3 +1,6 @@
+@use '../util/' as *;
+
+
 html{
 box-sizing: border-box;
 }
@@ -6,14 +9,22 @@ body{
     padding: 0;
     font-family: var(--font--montserrat);
 }
-.container{
-    padding: 1.5625rem 5.875rem;
-    &-px{
-        padding:  0 5.875rem;
+@include breakpoint(large){
+    .container{
+        padding: 1.5625rem 5.875rem;
+        &-px{
+            padding:  0 5.875rem;
+        }
+        &-py{
+            padding: 1.5625rem 0;
+        }
     }
-    &-py{
-        padding: 1.5625rem 0;
-    }
+    
+}
+
+.title{
+    color: var(--darkturqouise);
+    font-size: var(--font-lg);
 }
 
 
