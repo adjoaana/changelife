@@ -1,35 +1,92 @@
-@use  '../util/' as *;
-
+@use '../util/' as *;
 .feature{
-    &__text{
+        &__text{
         align-items: center;
         justify-content: space-around;
         
         &__title{
-            color: var(--darkturqouise);
-            font-size: var(--font-lg);
             align-items: center;
             text-align: center;
-            @include  breakpoint-up(large){
+            @include breakpoint(large){
                 position: relative;
                 left: 38%;
                 width: 30%; 
                   
-            };
-            >p{
-                @include breakpoint-up(large){
-                    width: 100%;
-                    text-align:center;
+            }              
+        }
+        &__body{
+           @include breakpoint(large){
+                //width: 60%;
+                 padding:  1rem 4rem;
+                   text-align:center;
+                   align-items: center;
+                   //width: auto;
+                   
                 }
-                    text-align: left;
-                    padding-top: 2.75rem;
-                
-            }
-                      
+                @include breakpoint-down(medium){
+                    text-align: center;
+                    font-size: var(--font-sm);
+                    padding-top: 1rem;
+                }
+                    
+        }
+
+    }
+    &__grid{
+        padding-top: 1rem;
+        @include breakpoint-down(medium){
+            grid-template-rows: repeat(1 ,1fr);
+            width: inherit;
+            //height:15rem ;
+            
+        }
+        @include breakpoint(large){
+            width: 52.125rem;
+            height: 20rem;
+            padding: 1.5625rem 5.875rem;
+            align-items: center;
+            grid-template-columns: repeat( 3, 1fr);
+        }
+        &__item{
+               
+                background-color: var(--lightturquoise);
+                &:hover{
+                    transform: scale(1.05);
+                }
+                p{
+                    font-size: var(--font-mid);
+                     padding: 2rem;
+                }
+               
         }
     }
+    &__icon{
+        position: relative;
+        @include breakpoint-down(medium){
+            width: auto;
+        }
+            width: 50%;
+            height: 30%;
+            border-radius: 10px;
+            background-color: var(--grey);
+            margin: 1rem 2.5rem;
+            padding: 1.5rem;
+            > i{
+                &::before{
+                    color: var(--darkturqouise);
+                    font-size: 4rem;
+                    margin: 1.5rem;
+                    font-size: 5rem;
+                     margin: 1.5rem;
+                    
+                }
+            }
+        }
  
 }
-.container{
-    padding: 1.5625rem 5.875rem;
+
+.card{
+    display: grid;
+    grid-template: 1fr;
+    gap: 1.5rem;
 }

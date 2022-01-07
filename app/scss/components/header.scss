@@ -40,7 +40,7 @@
                 height: 4.75rem;
                 margin: 1rem;
             };
-            @include breakpoint-up(large){
+            @include breakpoint(large){
             width: 14.375rem;
             height: 3.875rem;
             margin: 1.125rem  17rem ;
@@ -51,7 +51,7 @@
     &__menu{
         background-color: var(--darkturqouise);
         padding-top: 1rem;
-        height: 3.6875rem;
+        height: 2.688rem;
         @include breakpoint-down(medium){
             padding: 0;
         }
@@ -60,9 +60,9 @@
                 padding: 1.2rem;
                 margin-left: 3rem;
             }
-            @include breakpoint-up(large){
-                margin-left: 30rem;
-                margin-bottom: 1.5625rem;
+            @include breakpoint(large){
+                margin-left: 28rem;
+                //margin-bottom: 1.5625rem;
             }
             
             > a{
