@@ -18,6 +18,7 @@ p{
   color: var(--lightbrown);
   font-size: var(--font-sm);
 }
+
 //hide for tablet and mobile 
 .hide-for-mobile{
   @include breakpoint-down(small){

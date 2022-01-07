@@ -18,6 +18,9 @@ body{
         &-py{
             padding: 1.5625rem 0;
         }
+        &-pxy{
+            padding: 2.875rem ;
+        }
     }
     
 }
@@ -26,5 +29,12 @@ body{
     color: var(--darkturqouise);
     font-size: var(--font-lg);
 }
+.corners{
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+    transition:  all ease-in-out 300ms ;
+}
+
 
 

@@ -48,10 +48,7 @@
             grid-template-columns: repeat( 3, 1fr);
         }
         &__item{
-                border-radius: 10px;
-                overflow: hidden;
-                box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
-                transition:  all ease-in-out 300ms ;
+               
                 background-color: var(--lightturquoise);
                 &:hover{
                     transform: scale(1.05);

@@ -1,0 +1,31 @@
+.forms{
+    height: 10rem;
+    background-color: var(--turquoise);
+    &__band{
+        position: absolute;
+        font-size: var(--font-lg);
+        left: 27%;
+        text-align: center;
+        //background-color: var(--turquoise);
+        &__title{
+            font-size: var(--font-lg);
+            margin-bottom: 1rem;
+            color: var(--white);
+            p{
+                color: var(--white);
+            }
+        }
+        &__container{
+            position: relative;
+            width: 40rem;
+            height: 30rem;
+            background-color: rgb(224, 224, 224);
+            input{
+                width: 100%;
+                margin-left: 2rem;
+            }
+
+        }
+    }
+ 
+}
