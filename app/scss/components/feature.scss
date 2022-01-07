@@ -1,38 +1,32 @@
 @use '../util/' as *;
 .feature{
-    &__text{
+        &__text{
         align-items: center;
         justify-content: space-around;
         
         &__title{
             align-items: center;
             text-align: center;
-
             @include breakpoint(large){
-                position: absolute;
+                position: relative;
                 left: 38%;
                 width: 30%; 
                   
-            }
-            &.container{
-              @include breakpoint-down(medium){
-                padding: 0;
-              }  
-            }
-                      
+            }              
         }
         &__body{
            @include breakpoint(large){
-                width: 60%;
+                //width: 60%;
                  padding:  1rem 4rem;
                    text-align:center;
-                   width: auto;
+                   align-items: center;
+                   //width: auto;
                    
                 }
                 @include breakpoint-down(medium){
                     text-align: center;
                     font-size: var(--font-sm);
-                    padding: 1rem 0;
+                    padding-top: 1rem;
                 }
                     
         }
@@ -43,18 +37,17 @@
         @include breakpoint-down(medium){
             grid-template-rows: repeat(1 ,1fr);
             width: inherit;
-            height:15rem ;
+            //height:15rem ;
             
         }
         @include breakpoint(large){
-            //width: 52.125rem;
+            width: 52.125rem;
             height: 20rem;
             padding: 1.5625rem 5.875rem;
             align-items: center;
             grid-template-columns: repeat( 3, 1fr);
         }
         &__item{
-                height: inherit;
                 border-radius: 10px;
                 overflow: hidden;
                 box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
@@ -71,8 +64,9 @@
         }
     }
     &__icon{
+        position: relative;
         @include breakpoint-down(medium){
-            width: 60%;
+            width: auto;
         }
             width: 50%;
             height: 30%;
