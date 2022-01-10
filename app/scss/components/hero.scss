@@ -6,7 +6,10 @@ position: relative;
  background-size: cover;
  background-repeat: no-repeat;
  background-position: center center;
- height: 55.4375rem;
+ min-height: 55.4375rem;
+ @include breakpoint-down(medium){
+    
+ }
  z-index: 1;
     &::before{
         content: ""; 
@@ -16,6 +19,7 @@ position: relative;
         z-index: 2;
         opacity: 1;
         background: linear-gradient( to bottom , transparent 85%, --white);
+        
     }
 
 
