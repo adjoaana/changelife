@@ -1,14 +1,24 @@
-.forms{
-    height: 10rem;
+@use '../util/' as *;
+ 
+ .forms{
+    height: 15rem;
     background-color: var(--turquoise);
+    @include breakpoint-down(medium){
+        height: 20rem;
+    }
     &__band{
         position: absolute;
         font-size: var(--font-lg);
-        left: 27%;
-        text-align: center;
-        //background-color: var(--turquoise);
+        
+        @include breakpoint(large){
+            left: 20%;
+        }
+        @include breakpoint-down(medium){
+            left: 12%;
+        }
         &__title{
             font-size: var(--font-lg);
+            text-align: center;
             margin-bottom: 1rem;
             color: var(--white);
             p{
@@ -16,16 +26,42 @@
             }
         }
         &__container{
-            position: relative;
-            width: 40rem;
-            height: 30rem;
-            background-color: rgb(224, 224, 224);
-            input{
-                width: 100%;
-                margin-left: 2rem;
+            position: relative; 
+            background-color: var(--lightgrayishblue);
+            @include breakpoint-down(medium){
+                //width: 80%;
+                margin: 1rem;
             }
+            &__grid{
+                margin: 2.5rem;
+                @include breakpoint(medium){
+                    display: flex;
+                    justify-content: space-between;
+                    >form{
+                        padding-right: 2rem;
+                    }
+                }
+            }
+        }
+        input{
+            width: 250px;
+            padding: .7rem;
+            margin-bottom: 1rem;
+            background-color: var(--grey);
 
         }
     }
  
+}
+.messagebox{
+    margin-left: 39px;
+    @include breakpoint(medium){
+    }
+}
+#messagebox{
+    background-color: var(--grey);
+    margin: 1rem;
+    @include breakpoint(large){
+        margin-left: 39px;
+    }
 }

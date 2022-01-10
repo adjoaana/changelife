@@ -14,7 +14,7 @@
      <script src="https://kit.fontawesome.com/0b270ae5f5.js" crossorigin="anonymous"></script>
      
  </head>
- <body>
+ <body class="body">
      <header class="header" id="header"> 
         <div class="header__logo">
              <img src="/images/logo.png" alt="logo">
@@ -113,9 +113,29 @@
                     Want to reach us? 
                     <p> Get in touch.</p> 
                 </div>
-                <div class="forms__band__container corners">
-                       <label for="fullname">Fullname</label>
-                       <input type="text" name="fullname" id="fullname">
+                <div class="forms__band__container container corners">
+                    <div class="forms__band__container__grid">
+                        <form action="">
+                            <label for="fullname">Fullname</label><br>
+                            <input type="text" name="fullname" id="fname" placeholder="Enter your fullname.." required>
+                            <br>
+                            <label for="email">Email</label><br>
+                            <input type="email" name="email" id="email" placeholder="Enter your email address" required>   
+                        </form>
+                        <form action="">
+                            <label for="phone">Phone</label><br>
+                            <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" required>
+                            <br>
+                            <label for="address">Address</label><br>
+                            <input type="text" name="address" id="address" placeholder="Enter your address" required>  
+                        </form>
+                    </div>
+                    <label for="messagebox" class="messagebox" >Message</label><br>
+                    <textarea name="message" id="messagebox" cols="50" rows="10"></textarea><br>
+                    <button class="button corners-notrans submit_button">
+                        Send Message
+                    </button>
+
                 </div>                    
             </div>
 
