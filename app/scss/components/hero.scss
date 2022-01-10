@@ -26,7 +26,7 @@ position: relative;
  &__text{
      font-size: var(--font-lg);
     color: var(--white);
-     @include breakpoint-down(small){
+     @include breakpoint-down(medium){
         position: absolute;
         top: 71%;
         left: 5%;

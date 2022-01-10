@@ -21,9 +21,12 @@
                     width: 100%;
                     text-align:center;
                 }
+                @include breakpoint-down(medium){
                     text-align: left;
                     padding-top: 2.75rem;
                 
+
+                }
             }
                       
         }
