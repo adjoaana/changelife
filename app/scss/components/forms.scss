@@ -1,0 +1,67 @@
+@use '../util/' as *;
+ 
+ .forms{
+    height: 15rem;
+    background-color: var(--turquoise);
+    @include breakpoint-down(medium){
+        height: 20rem;
+    }
+    &__band{
+        position: absolute;
+        font-size: var(--font-lg);
+        
+        @include breakpoint(large){
+            left: 20%;
+        }
+        @include breakpoint-down(medium){
+            left: 5%;
+        }
+        &__title{
+            font-size: var(--font-lg);
+            text-align: center;
+            margin-bottom: 1rem;
+            color: var(--white);
+            p{
+                color: var(--white);
+            }
+        }
+        &__container{
+            position: relative; 
+            background-color: var(--lightgrayishblue);
+            @include breakpoint-down(medium){
+                //width: 80%;
+                margin: 1rem;
+            }
+            &__grid{
+                margin: 2.5rem;
+                @include breakpoint(medium){
+                    display: flex;
+                    justify-content: space-between;
+                    >form{
+                        padding-right: 2rem;
+                    }
+                }
+            }
+        }
+        input{
+            width: 250px;
+            padding: .7rem;
+            margin-bottom: 1rem;
+            background-color: var(--grey);
+
+        }
+    }
+ 
+}
+.messagebox{
+    @include breakpoint(medium){
+        margin-left: 39px;
+    }
+}
+#messagebox{
+    background-color: var(--grey);
+    margin: 1rem;
+    @include breakpoint(large){
+        margin-left: 39px;
+    }
+}
