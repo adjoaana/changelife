@@ -14,7 +14,7 @@
             left: 20%;
         }
         @include breakpoint-down(medium){
-            left: 12%;
+            left: 5%;
         }
         &__title{
             font-size: var(--font-lg);
