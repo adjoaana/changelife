@@ -1,0 +1,34 @@
+@use '../util/' as *;
+
+.article{
+    background-color: var(--lightturquoise);
+    width: inherit;
+       @include breakpoint(large){
+        display: flex;
+        background-color: var(--white);
+    }
+
+    &__image{
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width:inherit;
+        height: 40rem;
+        
+        @include breakpoint(large){
+            height: 20rem;
+            width: 20rem;
+            flex: 3;
+        }
+    }
+    &__text{
+        flex: 2; 
+        @include breakpoint-down(medium){
+            padding: 2rem;
+        }
+        &__title{
+            padding-bottom: 2rem;
+        }
+    }
+
+}

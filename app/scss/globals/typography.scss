@@ -12,12 +12,14 @@ a:active{
     text-decoration: none;
 }
 
-p{
+p, label, input{
   margin: 0;
   padding: 0;
+  text-decoration: none;
   color: var(--lightbrown);
   font-size: var(--font-sm);
 }
+
 //hide for tablet and mobile 
 .hide-for-mobile{
   @include breakpoint-down(small){
@@ -31,7 +33,7 @@ p{
 }
 //hide for desktop viewport widths
 .hide-for-desktop{
-  @include breakpoint-up(large){
+  @include breakpoint(large){
     display: none;
   }
 }
