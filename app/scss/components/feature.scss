@@ -24,11 +24,15 @@
                    
                 }
                 @include breakpoint-down(medium){
-                    text-align: center;
-                    font-size: var(--font-sm);
-                    padding-top: 1rem;
+                
+                    text-align: left;
+                    padding-top: 2.75rem;
+                
+
                 }
-                    
+            }
+             
+               
         }
 
     }
@@ -57,7 +61,7 @@
                     font-size: var(--font-mid);
                      padding: 2rem;
                 }
-               
+           
         }
     }
     &__icon{
