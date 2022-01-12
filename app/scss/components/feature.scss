@@ -1,6 +1,7 @@
 @use '../util/' as *;
 .feature{
         &__text{
+            text-align: center;
         align-items: center;
         justify-content: space-around;
         
@@ -25,7 +26,7 @@
                    
                 }
                 @include breakpoint-down(medium){
-                    text-align: left;
+                    text-align: center;
                     padding: 2.75rem;
 
                 }
@@ -68,13 +69,13 @@
         margin: 1rem 2.5rem;
         padding: 1.5rem;
         @include breakpoint-down(medium){
-                margin: 1rem 4rem;
+            margin: 1rem auto;
         }
             > i{
                 &::before{
                     color: var(--darkturqouise);
                        font-size: 5rem;
-                       margin: 2.5rem;
+                       //margin: 2.5rem;
                        @include breakpoint(medium){
                            margin: 1.5rem;
                        }
