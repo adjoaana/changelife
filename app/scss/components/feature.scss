@@ -76,8 +76,10 @@
                 &::before{
                     color: var(--darkturqouise);
                        font-size: 5rem;
-                     margin: 2.5rem;
-                    
+                       margin: 2.5rem;
+                       @include breakpoint(medium){
+                           margin: 1.5rem;
+                       }
                 }
             }
         }
