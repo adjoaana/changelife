@@ -1,22 +1,20 @@
 @use '../util/' as *;
  
  .forms{
-
     height: 15rem;
-
     background-color: var(--turquoise);
     @include breakpoint-down(medium){
         height: 20rem;
     }
     &__band{
-        position: absolute;
         font-size: var(--font-lg);
-        
         @include breakpoint(large){
+            position: absolute;
             left: 20%;
         }
         @include breakpoint-down(medium){
-            left: 5%;
+            width: inherit;
+            //left: 5%;
         }
         &__title{
             font-size: var(--font-lg);
@@ -57,10 +55,9 @@
 }
 .messagebox{
 
-    @include breakpoint(medium){
+    @include breakpoint-down(medium){
         margin-left: 39px;
 
-   
     }
 }
 #messagebox{

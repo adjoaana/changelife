@@ -1,19 +1,23 @@
 @use '../util/' as *;
 
 .article{
-    background-color: var(--lightturquoise);
+    // background-color: var(--lightturquoise);
+    background-color: var(--white);
     width: inherit;
        @include breakpoint(large){
         display: flex;
-        background-color: var(--white);
     }
 
-    &__image{
+    &__image {
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
         width:inherit;
         height: 40rem;
+        @include breakpoint-down(medium){
+            background-position: 59%;
+            //margin: 0.2rem;
+        }
         
         @include breakpoint(large){
             height: 20rem;
