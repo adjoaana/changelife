@@ -39,6 +39,20 @@ body{
 .title{
     color: var(--darkturqouise);
     font-size: var(--font-lg);
+    align-items: center;
+    text-align: center;
+    //padding-top: 1rem;
+    @include breakpoint(large){
+        position: relative;
+        left: 38%;
+        width: 30%; 
+        
+    } 
+}
+.title-1{
+    color: var(--darkturqouise);
+    font-size: var(--font-lg);
+    
 }
 .corners{
     border-radius: 10px;
@@ -52,9 +66,38 @@ body{
     }
 }
 .noscroll{
-    overflow-y: hidden;
+    overflow: hidden;
+}
+.article__image{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:inherit;
+    height: 40rem;
+    @include breakpoint-down(medium){
+        background-position: 59%;
+        //margin: 0.2rem;
+    }
+    
+    @include breakpoint(large){
+        height: 20rem;
+        width: 20rem;
+        flex: 3;
+    }
+}
+.article__text{
+    flex: 2; 
+    @include breakpoint-down(medium){
+        padding: 2rem;
+    }
+    &__title{
+        padding-bottom: 2rem;
+    }
 }
 
 
 
 
+em{
+    color: var(--darkturqouise);
+}

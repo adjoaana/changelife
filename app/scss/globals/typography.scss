@@ -19,6 +19,13 @@ p, label, input{
   color: var(--lightbrown);
   font-size: var(--font-sm);
 }
+.p-1{
+  margin: 0;
+  padding: 1rem;
+  text-decoration: none;
+  color: var(--lightbrown);
+  font-size: var(--font-sm);
+}
 
 //hide for tablet and mobile 
 .hide-for-mobile{

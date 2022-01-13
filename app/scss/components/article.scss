@@ -8,31 +8,6 @@
         display: flex;
     }
 
-    &__image {
-        background-position: center center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        width:inherit;
-        height: 40rem;
-        @include breakpoint-down(medium){
-            background-position: 59%;
-            //margin: 0.2rem;
-        }
-        
-        @include breakpoint(large){
-            height: 20rem;
-            width: 20rem;
-            flex: 3;
-        }
-    }
-    &__text{
-        flex: 2; 
-        @include breakpoint-down(medium){
-            padding: 2rem;
-        }
-        &__title{
-            padding-bottom: 2rem;
-        }
-    }
+  
 
 }

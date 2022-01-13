@@ -1,20 +1,12 @@
 @use '../util/' as *;
 .feature{
+    background-color:var(--lightgrayishblue);
+
         &__text{
             text-align: center;
         align-items: center;
         justify-content: space-around;
         
-        &__title{
-            align-items: center;
-            text-align: center;
-            @include breakpoint(large){
-                position: relative;
-                left: 38%;
-                width: 30%; 
-                  
-            }              
-        }
         &__body{
             padding-bottom: 1rem;
            @include breakpoint(large){
@@ -90,4 +82,15 @@
     display: grid;
     grid-template: 1fr;
     gap: 1.5rem;
+    @include breakpoint-down(medium) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include breakpoint(large) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    &__item{
+        display: grid;
+        grid-template: 1fr;
+        gap: 1.5rem;
+      }
 }
