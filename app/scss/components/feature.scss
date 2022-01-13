@@ -77,6 +77,23 @@
         }
  
 }
+.vision {
+    &__title {
+      h2 {
+        margin: 1.5625rem auto;
+  
+        @include breakpoint(medium) {
+          text-align: left;
+        }
+      }
+      p {
+        text-align: left;
+        @include breakpoint(medium) {
+          text-align: left;
+        }
+      }
+    }
+  }
 
 .card{
     display: grid;
@@ -85,12 +102,29 @@
     @include breakpoint-down(medium) {
       grid-template-columns: repeat(2, 1fr);
     }
-    @include breakpoint(large) {
+    @include breakpoint(medium){
       grid-template-columns: repeat(4, 1fr);
     }
     &__item{
         display: grid;
         grid-template: 1fr;
         gap: 1.5rem;
+    }
+    &__image {
+        height: 16rem;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 0.4375; //7px
+    }
+    &__text {
+        padding: 1.25rem;
+    }
+    &__title {
+        font-size: var(--font-lg);
+        padding-bottom: 0.75rem;
+      }
+      &__description {
+        color: var(--lightbrown);
       }
 }
