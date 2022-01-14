@@ -44,8 +44,9 @@ body{
     //padding-top: 1rem;
     @include breakpoint(large){
         position: relative;
-        left: 38%;
-        width: 30%; 
+        padding: 1rem 2rem;
+        // left: 38%;
+        // width: 30%; 
         
     } 
 }
@@ -53,6 +54,10 @@ body{
     color: var(--darkturqouise);
     font-size: var(--font-lg);
     
+}
+.blurb{
+color: var(--white);
+font-size: var(--font-lg)
 }
 .corners{
     border-radius: 10px;
@@ -91,7 +96,7 @@ body{
         padding: 2rem;
     }
     &__title{
-        padding: 2rem;
+        padding: 0.5rem  2rem ;
     }
 }
 
