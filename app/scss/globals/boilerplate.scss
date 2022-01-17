@@ -10,6 +10,17 @@ body{
     font-family: var(--font--montserrat);
     user-select: none;
 }
+.flex{
+    &-ac{
+        align-items: center;
+    }
+    &-jc{
+        justify-content: space-between;
+    }
+    &-ta{
+        text-align: center;
+    }
+}
 @include breakpoint(large){
     .container{
         padding: 1.5625rem 5.875rem;
@@ -56,8 +67,10 @@ body{
     
 }
 .blurb{
-color: var(--white);
-font-size: var(--font-lg)
+margin-bottom: 2rem;
+color: var(--grey);
+font-size: var(--font-lg);
+
 }
 .corners{
     border-radius: 10px;
@@ -80,7 +93,7 @@ font-size: var(--font-lg)
     width:inherit;
     height: 40rem;
     @include breakpoint-down(medium){
-        background-position: 59%;
+        background-position: 29%;
         //margin: 0.2rem;
     }
     
