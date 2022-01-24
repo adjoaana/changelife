@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us | ChangeLife</title>
+        <link rel="icon" href="/images/favii.png" type="image/png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/dist/style.css">
+        <script defer src="/dist/script.js"></script>
+        <script src="https://kit.fontawesome.com/0b270ae5f5.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <header class="header" id="header">
+        <div class="header__logo">
+            <img src="/images/logo.png" alt="logo">
+            <div class="header__menu__toggle hide-for-desktop">
+               <span></span>
+               <span></span>
+               <span></span>
+           </div>
+       </div>
+       <div class="overlay has-fade"></div>
+       <div class="header__menu hide-for-mobile hide-for-tablet">
+               <div class="header__menu__links">
+                   <a href="/index.html">HOME</a>
+                    <a href="/about.html">ABOUT</a> 
+                   <a href="/service.html">SERVICES</a>
+                   <a href="/contact.html">CONTACT</a>
+                   
+               </div>
+               
+           </div>
+           <div class="header__toggle has-fade">
+               <a href="/">HOME</a>
+                <a href="/about.html"> ABOUT</a>
+               <a href="/service.html">SERVICES</a>
+               <a href="/contact.html">CONTACT</a>
+               
+           </div>
+
+    </header>
+    <div class="forms">
+        <div class="forms__band container-py ">
+            <div class="forms__band__title">
+                Want to reach us? 
+                <p> Get in touch.</p> 
+            </div>
+            <div class="forms__band__container container corners">
+                <div class="forms__band__container__grid">
+                    <form action="">
+                        <label for="fullname">Fullname</label><br>
+                        <input type="text" name="fullname" id="fname" placeholder="Enter your fullname.." required>
+                        <br>
+                        <label for="email">Email</label><br>
+                        <input type="email" name="email" id="email" placeholder="Enter your email address" required>   
+                    </form>
+                    <form action="">
+                        <label for="phone">Phone</label><br>
+                        <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" required>
+                        <br>
+                        <label for="address">Address</label><br>
+                        <input type="text" name="address" id="address" placeholder="Enter your address" required>  
+                    </form>
+                </div>
+                <label for="messagebox" class="messagebox" >Message</label><br>
+                <textarea name="message" id="messagebox" cols="50" rows="10"></textarea><br>
+                <button class="button corners-notrans submit_button">
+                    Send Message
+                </button>
+
+            </div>                    
+        </div>
+
+    </div>
+
+    <footer id="footer" class="footer">
+        <a href="#" class="footer__logo">
+            <img src="/images/logo.png" alt="logo">
+        </a>
+        <div class="footer__social">
+            <a href="#">
+                <img src="/images/icon/icon-facebook.svg" alt="Facebook">
+            </a>
+            <a href="#">
+                <img src="/images/icon/icon-pinterest.svg" alt="Pinterest">
+            </a>
+            <a href="#">
+                <img src="/images/icon/icon-youtube.svg" alt="Youtube">
+            </a>
+            <a href="#">
+                <img src="/images/icon/icon-twitter.svg" alt="Twitter">
+            </a>
+            <a href="#">
+                <img src="/images/icon/icon-instagram.svg" alt="Instagram">
+            </a>
+        </div>
+        <div class="footer__links col1">
+            <a href="/html/about.html">About Us</a>
+            <a href="/">Contact</a>
+            <a href="/">Blog</a>
+        </div>
+        <div class="footer__links col2">
+            <a href="/">Careers</a>
+            <a href="/">Support</a>
+            <a href="/">Privacy Policy</a>
+        </div>
+        <div class="footer__cta">
+            <a href="#" class="button">Sign Up</a>
+            <div class="footer__copyright">
+                &copy; Stuber. All Rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
