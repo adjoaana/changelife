@@ -135,7 +135,7 @@
       grid-template-columns: repeat(1, 1fr);
     }
     @include breakpoint(medium){
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(2, 1fr);
      &_gtr{
       grid-template-rows: repeat(4, .5fr);
      
@@ -144,11 +144,12 @@
     
     &__image {
         height: 16rem;
-        background-position: top center;
+        background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         border-radius: 0.4375; //7px
         @include breakpoint-down(medium){
+          background-position: top center;
           height: 22rem;
         }
     }

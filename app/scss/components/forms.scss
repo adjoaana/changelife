@@ -1,7 +1,7 @@
 @use '../util/' as *;
  
  .forms{
-    height: 15rem;
+    height: 50rem;
     background-color: var(--turquoise);
     @include breakpoint-down(medium){
         height: 20rem;

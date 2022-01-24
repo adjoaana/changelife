@@ -31,8 +31,9 @@ body{
             padding: 1.5625rem 0;
         }
         &-pxy{
-            padding: 2.875rem ;
+            padding: 2.875rem;
         }
+        
         &-mx{
             margin:  0 5.875rem;
         }
@@ -42,7 +43,9 @@ body{
         &-mxy{
             margin: 2.875rem ;
         }
-
+    
+        @include breakpoint-down(large){
+        }
     }
     
 }
@@ -80,6 +83,11 @@ body{
 margin-bottom: 2rem;
 color: var(--grey);
 font-size: var(--font-lg);
+@include breakpoint-down(medium){
+    color: var(--grey);
+    font-size: var(--font-mid);
+    
+}
 
 }
 .corners{
@@ -87,7 +95,7 @@ font-size: var(--font-lg);
     overflow: hidden;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
     transition:  all ease-in-out 300ms ;
-    
+
     &-notrans{
     border-radius: 10px;
     overflow: hidden;
