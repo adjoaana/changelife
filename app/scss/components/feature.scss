@@ -108,13 +108,15 @@
  
 }
 .vision {
-  
+
     &__title {
+      padding-bottom: .5rem;
       h2 {
         margin: 1.5625rem auto;
   
         @include breakpoint(medium) {
           text-align: left;
+         
         }
       }
       p {
@@ -149,8 +151,10 @@
         background-repeat: no-repeat;
         border-radius: 0.4375; //7px
         @include breakpoint-down(medium){
-          background-position: top center;
-          height: 22rem;
+          background-position: center;
+          padding: 3rem;
+          // background-position: top center;
+          // height: 22rem;
         }
     }
     &__text {
