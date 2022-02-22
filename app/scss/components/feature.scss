@@ -146,11 +146,10 @@
     
     &__image {
         height: 16rem;
-        background-position: center;
+        background-position: 25% 30%;
         background-size: cover;
         background-repeat: no-repeat;
-        border-radius: 0.4375; //7px
-        
+        border-radius: 7px; //7px
         @include breakpoint-down(medium){
           margin: 1rem;
           background-position: 25% 31%
