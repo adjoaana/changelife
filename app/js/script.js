@@ -8,7 +8,6 @@ const fadeElems = document.querySelectorAll(".has-fade");
 const noscroll = document.querySelector(".noscroll");
 
 
-
 headerToggle.addEventListener("click", function (){
     if(header.classList.contains("open")){
         header.classList.remove("open");

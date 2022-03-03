@@ -26,33 +26,16 @@
             }
         }
         &__container{
-            position: relative; 
-            background-color: var(--lightgrayishblue);
-            @include breakpoint-down(medium){
-                //width: 80%;
-                margin: 1rem;
-            }
-            &__grid{
-                margin: 2.5rem;
-                @include breakpoint(medium){
-                    display: flex;
-                    justify-content: space-between;
-                    >form{
-                        padding-right: 2rem;
-                    }
-                }
-            }
-        }
-        input{
-            width: 250px;
-            padding: .7rem;
-            margin-bottom: 1rem;
-            background-color: var(--grey);
+            padding: 1rem;
+            display: flex;
+            justify-content: space-evenly;
 
         }
+        
     }
- 
 }
+
+
 .messagebox{
     margin-left: 39px;
     @include breakpoint-down(medium){
@@ -61,7 +44,7 @@
 }
 #messagebox{
     background-color: var(--grey);
-    margin: 1rem;
+    //margin: 1rem;
     @include breakpoint(large){
         margin-left: 39px;
     }

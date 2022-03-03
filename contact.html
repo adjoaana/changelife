@@ -50,39 +50,37 @@
             
         </div>
     </section> 
-    <div class="forms">
+    <section class="forms">
         <div class="forms__band container-py ">
             <div class="forms__band__title">
                 Want to reach us? 
                 <p> Get in touch.</p> 
-            </div> 
-            <form class="forms__band__container container corners">
-                <div class="forms__band__container__grid">
-                    <form action="">
-                        <label for="fullname">Fullname</label><br>
-                        <input type="text" name="fullname" id="fname" placeholder="Enter your fullname.." required>
+            </div>
+            <section class="forms__band__container corners">
+                <form action="">
+                    <div class="forms__row" >
+                        <label for="name">Fullname</label>
                         <br>
-                        <label for="email">Email</label><br>
-                        <input type="email" name="email" id="email" placeholder="Enter your email address" required>   
-                    </form>
-                    <form action="">
+                        <input type="text" name="fname" id="fname" placeholder="Fullname">
+
+                        <label for="name">Email</label>
+                        <br>
+                        <input type="email" name="email" id="email" placeholder="Email">
+                    </div>
+                    <!-- <div class="forms__row">
                         <label for="phone">Phone</label><br>
-                        <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" required>
-                        <br>
-                        <label for="address">Address</label><br>
-                        <input type="text" name="address" id="address" placeholder="Enter your address" required>  
-                    </form>
-                </div>
-                <label for="messagebox" class="messagebox" >Message</label><br>
-                <textarea name="message" id="messagebox" cols="38" rows="10"></textarea><br>
-                <button class="button corners-notrans submit_button">
-                    Send Message
-                </button>
+                        <input type="tel" name="phone" id="phone" placeholder="Phone">
 
-            </form>                    
+                        <label for="Address">Address</label><br>
+                        <input type="text" name="address" id="address" placeholder="Address">
+                    </div> -->
+                    <label for="messagebox">Message</label> <br>
+                    <textarea name="message" id="messagebox" cols="30" rows="10"></textarea>
+                </form>              
+
+            </section>
         </div>
-
-    </div>
+    </section>
 
     <footer id="footer" class="footer">
         <a href="#" class="footer__logo">
