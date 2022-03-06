@@ -19,6 +19,10 @@ p{
   color: var(--lightbrown);
   font-size: var(--font-sm);
 }
+label{
+  display: block;
+  margin: .5rem;
+}
 .p-1{
   margin: 0;
   padding: 1rem;

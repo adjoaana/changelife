@@ -25,13 +25,14 @@
                 color: var(--white);
             }
         }
-        &__container{
-            padding: 1rem;
-            display: flex;
-            justify-content: space-evenly;
 
+    }
+    &__row{
+         > label{
+            display: block;
+            margin-bottom: .5rem;
         }
-        
+          
     }
 }
 
