@@ -1,0 +1,5 @@
+@use '../util/' as *;
+.contact {
+  background-color: var(--limegreen);
+}
+/*# sourceMappingURL=contact.css.map */

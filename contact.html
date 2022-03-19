@@ -45,38 +45,49 @@
 
     </header>
     <section class="vision">
-        <div class="vision__title  feature__text__title title container">
+        <div class="vision__title  feature__text__title">
             <h2>Talk to Us!</h2>
             
         </div>
     </section> 
-    <section class="forms">
-        <div class="forms__band container-py ">
-            <div class="forms__band__title">
-                Want to reach us? 
-                <p> Get in touch.</p> 
-            </div>
-            <section class="forms__band__container corners">
-                <form action="">
-                    <div class="forms__row" >
+    <section class="contact container-pxy">
+        <div class="contact-container">
+             <p> Want to Reach us </p>
+            <h2>Contact our professionals here</h2>
+            <form id="signupForm" method="post" class="corners" action="/contact.php">
+                <ul>
+                    <li>
+    
                         <label for="name">Fullname</label>
-                        <input type="text" name="fname" id="fname" placeholder="Fullname">
+                        <input type="text" name="fullname" id="fullname" aria-placeholder="Enter your full name" required>
+                    </li>
+                    <li>
+    
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" aria-placeholder="Enter a valid email" required>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+    
+                        <label for="phone">  Phone</label>
+                        <input type="tel" name="phone" id="phone" aria-placeholder="Enter your phone number" required>
+                    </li>
+                    <li>
+                        <label for="address"> Address</label>
+                        <input type="text" name="address" id="address" aria-placeholder="Enter your address" required>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
 
-                        <label for="name">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Email">
-                    </div>
-                    <div class="forms__row">
-                        <label for="phone">Phone</label>
-                        <input type="tel" name="phone" id="phone" placeholder="Phone">
-
-                        <label for="Address">Address</label>
-                        <input type="text" name="address" id="address" placeholder="Address">
-                    </div>
-                    <label for="messagebox">Message</label>
-                    <textarea name="message" id="messagebox" cols="30" rows="10"></textarea>
-                </form>              
-
-            </section>
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" aria-placeholder="Enter a message"></textarea>
+                    </li>
+                </ul>
+                <button id="button" class="button corners" >Submit</button>
+            </form>
+            
         </div>
     </section>
 
@@ -84,23 +95,28 @@
         <a href="#" class="footer__logo">
             <img src="/images/logo.png" alt="logo">
         </a>
-        <div class="footer__social">
+        <section class="footer__social">
             <a href="#">
                 <img src="/images/icon/icon-facebook.svg" alt="Facebook">
+                <span class="sr-only">Facebook</span>
             </a>
             <a href="#">
                 <img src="/images/icon/icon-pinterest.svg" alt="Pinterest">
+                <span class="sr-only">Pinterest</span>
             </a>
             <a href="#">
                 <img src="/images/icon/icon-youtube.svg" alt="Youtube">
+                <span class="sr-only">Youtube</span>
             </a>
             <a href="#">
                 <img src="/images/icon/icon-twitter.svg" alt="Twitter">
+                <span class="sr-only">Twitter</span>
             </a>
             <a href="#">
                 <img src="/images/icon/icon-instagram.svg" alt="Instagram">
+                <span class="sr-only">Instagram</span>
             </a>
-        </div>
+        </section>
         <div class="footer__links col1">
             <a href="/">Home</a>
             <a href="/contact.html">Contact</a>
@@ -122,7 +138,10 @@
             <a href="/">Privacy Policy</a>
         </div> -->
         <div class="footer__cta">
-            <a href="/contact.html" class="button">Sign Up</a>
+            <button class="button">
+                <a href="/contact.html">Sign Up</a>
+
+            </button>
             <div class="footer__copyright">
                 &copy; Changelife. All Rights reserved.
             </div>

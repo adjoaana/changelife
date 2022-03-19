@@ -1,0 +1,38 @@
+@use '../util/' as *;
+
+.contact{
+    background-color: var(--limegreen);
+    color: var(--white);
+    margin: 0 auto;
+    &-container{
+        //margin: 0 auto;
+        text-align: center;
+        form{
+            text-align: center;
+            align-items: center;
+            width: auto;
+            background-color: var(--turquoise);
+
+            ul{
+                display: flex;
+                list-style-type: none;
+                flex-flow: row wrap;
+                gap: 2rem;
+                justify-content: center;
+                text-align: left;
+
+                input{
+                    font-family: var(--font-montserrat);
+                    padding: .5rem;
+                }
+        
+            }
+        }
+    }
+
+}
+.status{
+    width: 1100px;
+    margin:  auto;
+    background: linear-gradient(var(--limegreen) , var(--turquoise));
+}

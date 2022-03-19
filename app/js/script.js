@@ -6,6 +6,7 @@ const open = document.querySelector(".open");
 const overlay = document.querySelector(".overlay");
 const fadeElems = document.querySelectorAll(".has-fade");
 const noscroll = document.querySelector(".noscroll");
+const submitButton = document.querySelector("#button")
 
 
 headerToggle.addEventListener("click", function (){
@@ -28,3 +29,4 @@ headerToggle.addEventListener("click", function (){
        
     }
 })
+
