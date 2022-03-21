@@ -25,21 +25,20 @@ headerToggle.addEventListener("click", function () {
     });
   }
 });
-// const signupForm = document.querySelector("#signupForm");
-// const fullname = document.querySelector("#fullname");
-// const email = document.querySelector("#email");
-// const phone = document.querySelector("#phone");
-// const address = document.querySelector("#address");
-// const message = document.querySelector("#message");
 
-// signupForm.submit((e) => {
-//   let data = {
-//     name: fullname.innerHTML,
-//     email: email.innerHTML,
-//     phone: phone.innerHTML,
-//     address: address.innerHTML,
-//     message: message.innerHTML,
-//   };
-//   console.log(data);
-//   return e;
-// });
+//form logic
+//To get the data into an object with the click of submit
+
+//
+function sendEmail() {
+  Email.send({
+    Host: "smtp.gmail.com",
+    Username: "adjoaanaman2345@gmail.com",
+    Password: "Nyantekyiwaa0987",
+    To: "adjanaman@hotmail.com",
+    From: document.getElementById("#email").value,
+    Subject: "New Contact Form Enquiry",
+    Body: "And this is the body",
+  }).then((message) => alert(message));
+  return false;
+}
